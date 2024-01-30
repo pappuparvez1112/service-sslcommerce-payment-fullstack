@@ -123,7 +123,7 @@ async function run() {
         total_amount: orderService.price,
         currency: order.currency,
         tran_id: transactionId, // use unique tran_id for each api call
-        success_url: `http://localhost:5000/payment/success?transactionId=${transactionId}`,
+        success_url: `https://genius-car-bkash-sslcommerz-payment.vercel.app/payment/success?transactionId=${transactionId}`,
         fail_url: `${process.env.SERVER_URL}/payment/fail?transactionId=${transactionId}`,
         cancel_url: `${process.env.SERVER_URL}/payment/cancel`,
         ipn_url: "http://localhost:3030/ipn",
