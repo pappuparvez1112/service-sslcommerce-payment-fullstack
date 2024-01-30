@@ -35,7 +35,7 @@ const Checkout = () => {
 
     // }
 
-    fetch("http://localhost:5000/orders", {
+    fetch("https://genius-car-bkash-sslcommerz-payment.vercel.app/orders", {
       method: "POST",
       headers: {
         "content-type": "application/json",

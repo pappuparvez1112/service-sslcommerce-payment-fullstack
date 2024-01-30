@@ -11,7 +11,7 @@ const PaymentSuccess = () => {
 
   const [order, setOrder] = useState({});
   //   useEffect(() => {
-  //     fetch(`http://localhost:5000/orders/by-transaction-id/${transactionId}`)
+  //     fetch(`https://genius-car-bkash-sslcommerz-payment.vercel.app/orders/by-transaction-id/${transactionId}`)
   //       .then((res) => {
   //         if (!res.ok) {
   //           throw new Error("Network response was not ok");
@@ -26,7 +26,9 @@ const PaymentSuccess = () => {
   //   }, [transactionId]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/orders/by-transaction-id/${transactionId}`)
+    fetch(
+      `https://genius-car-bkash-sslcommerz-payment.vercel.app//orders/by-transaction-id/${transactionId}`
+    )
       .then((res) => res.json())
       .then((data) => setOrder(data));
   }, [transactionId]);
