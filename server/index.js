@@ -126,7 +126,7 @@ async function run() {
         success_url: `https://genius-car-bkash-sslcommerz-payment.vercel.app/payment/success?transactionId=${transactionId}`,
         fail_url: `${process.env.SERVER_URL}/payment/fail?transactionId=${transactionId}`,
         cancel_url: `${process.env.SERVER_URL}/payment/cancel`,
-        ipn_url: "http://localhost:3030/ipn",
+        ipn_url: "https://genius-car-bkash-sslcommerz-payment.vercel.app/ipn",
         shipping_method: "Courier",
         product_name: "Computer.",
         product_category: "Electronic",
