@@ -1,7 +1,7 @@
 import { useContext } from "react";
+// import ReactGA from "react-ga";
 import { useLoaderData } from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthProvider/AuthProvider";
-
 const Checkout = () => {
   const { _id, title, price, img } = useLoaderData();
   const { user } = useContext(AuthContext);
